@@ -20,16 +20,15 @@ async function nameBack(event) {
     name.style.display = "none";
 }
 
-  /* background-image: url("../images/flower.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
-
 let hexagons = document.querySelectorAll(".hexagon");
+
 hexagons.forEach(each => each.addEventListener('mouseover', ()=> {
-    console.log("image")
     each.style.backgroundImage = 'url("images/flower.jpg")';
     each.style.backgroundRepeat = "no-repeat";
     each.style.backgroundPosition = "center";
     each.style.backgroundSize = "cover";
+}))
+
+hexagons.forEach(each => each.addEventListener("mouseleave", () => {
+    each.style.backgroundImage = 'url("images/pink-honeycomb.jpg")';
 }))
