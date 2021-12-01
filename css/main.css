@@ -55,6 +55,8 @@
 .about {
   display: flex;
   flex-flow: column;
+  max-width: 80%;
+  margin: auto;
 }
 
 .dropdown-menu:hover .dropdown-button{
@@ -103,6 +105,7 @@
   display: flex;
   flex-flow: row;
   margin-right: 3vw;
+  grid-area: hex;
 }
 
 /* @keyframes arrow {
@@ -126,6 +129,7 @@
   flex-flow: column;
   left:0%;
   width: 60%;
+  grid-area: hex;
 }
 
 /* .main-row {
@@ -210,8 +214,6 @@
   overflow: hidden;
 }
 
-
-
 #grid li:nth-child(3n+2) {
   position: relative;
   left: 15%;
@@ -228,7 +230,7 @@
   text-align: left;
   font-size: small;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -241,8 +243,7 @@
 .main-row {
   position: relative;
   width: 70%;
-  /* margin: 6% auto; */
-  margin-left: 10vw;
+  /* margin-left: 10vw; */
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -261,6 +262,7 @@
   font-style: italic;
   font-size: medium;
   text-align: center;
+  grid-area: text;
   /* padding: 2vw; */
   /* margin: 2vw; */
 }
@@ -297,7 +299,7 @@
 }
 
 h1 {
-  grid-area: info;
+  grid-area: h1;
   align-self: center;
   margin: auto;
   font-size: medium;
@@ -306,7 +308,7 @@ h1 {
 }
 
 p .page-header {
-  grid-area: p;
+  grid-area: text;
   padding: 0%;
 }
 
@@ -330,10 +332,6 @@ p .page-header {
       font-size: x-small;
   }
 
-.picture img {
-    max-width: 40vw;
-  }
-
   #menu {
     margin-bottom: 5vh;
   }
@@ -354,7 +352,7 @@ p .page-header {
 
    .about {
    margin: 5vh auto;
-   max-width: 70vw;
+   max-width: 80vw;
   }
 
   .scroll-down img {
@@ -387,9 +385,10 @@ p .page-header {
     grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "info picture"
-      "p picture";
+      "h1 text"
+      "hex hex";
     gap: 5px;
+    align-items: center;
 }
 
   .scroll-down img {
@@ -414,9 +413,10 @@ p .page-header {
     grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "info picture"
-      "p picture";
+      "h1 text"
+      "hex hex";
     gap: 5px;
+    align-items: center;
 }
 
   .page-header {

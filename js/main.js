@@ -39,18 +39,18 @@ let hexagons = document.querySelectorAll(".hexagon");
 // }))
 hexagons.forEach(each => each.addEventListener('mouseover', ()=> {
     each.style.backgroundImage = 'url("images/flower.jpg")';
-    // each.style.backgroundRepeat = "no-repeat";
-    // each.style.backgroundPosition = "center";
-    // each.style.backgroundSize = "contain";
+    each.style.backgroundRepeat = "no-repeat";
+    each.style.backgroundPosition = "center";
+    each.style.backgroundSize = "contain";
 
-    // displayInformation(each);
+    displayInformation(each);
 }))
 
 hexagons.forEach(each => each.addEventListener("mouseleave", () => {
     each.style.backgroundImage = 'url("images/pink-honeycomb.jpg")';
-    // each.style.backgroundSize = "cover";
+    each.style.backgroundSize = "cover";
 
-    // hideInformation(each)
+    hideInformation(each)
 }))
 
 // Making visible dropdown menu
