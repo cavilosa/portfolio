@@ -80,23 +80,12 @@ links.forEach(each => each.addEventListener("click", () => {
     console.log(nameOfSection, section)
     section.style.height = "100vh";
     section.scrollIntoView(true);
-
-    // if (each.children[1].classList.contains("projects-link")) {
-    //     scrollToProjects()
-    // } else if (each.children[1].classList.contains("about-link")) {
-
-    // } else if (each.children[1].classList.contains("contacts-link")) {
-
-    // }
 }))
 
-async function scrollToProjects() {
-    const projects = document.querySelector(".projects")
-    projects.style.height = "100vh";
-    projects.scrollIntoView(true);
+
+async function menuClick() {
+    console.log(this.getAttribute(value))
 }
-
-
 
 
 
