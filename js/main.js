@@ -74,18 +74,24 @@ async function dropdownMenuClose(e){
 
 const links = document.querySelectorAll(".main-row")
 links.forEach(each => each.addEventListener("click", () => {
-    // console.log(each.children[1].classList.value)
     const nameOfSection = each.children[1].classList.value
     const section = document.querySelector("#" + nameOfSection)
-    console.log(nameOfSection, section)
     section.style.height = "100vh";
     section.scrollIntoView(true);
+    console.log(section)
 }))
 
 
-async function menuClick() {
-    console.log(this.getAttribute(value))
-}
+const menuLinks = document.querySelectorAll(".dropdown-content a")
+menuLinks.forEach(each => each.addEventListener("click", () => {
+    // console.log(each)
+    const name = each.innerHTML.toLowerCase()
+    const section = document.querySelector("#" + name)
+    // console.log(section)
+    section.style.height = "100vh";
+    section.scrollIntoView(true);
+    console.log(section)
+}))
 
 
 

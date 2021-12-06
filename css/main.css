@@ -107,7 +107,7 @@
   border-radius: 5px;
 } */
 
-.about {
+.about-main{
   display: flex;
   flex-flow: column;
   max-width: 80%;
@@ -411,7 +411,7 @@ p .page-header {
      font-size: 18px;
    }
 
-   .about {
+   .about-main {
    margin: 5vh auto;
    max-width: 80vw;
   }
@@ -426,7 +426,7 @@ p .page-header {
       font-size: 22px;
   }
 
-  .about {
+  .about-main {
     max-width: 70%;
     margin: 8vh auto;
   }
@@ -439,7 +439,7 @@ p .page-header {
    font-size:x-large;
  }
 
- .about {
+ .about-main {
     margin: auto;
     margin-top: 2vh;
     display: grid;
@@ -467,7 +467,7 @@ p .page-header {
     font-size:xx-large;
   }
 
-  .about {
+  .about-main {
     margin: auto;
     margin-top: 2vh;
     display: grid;
