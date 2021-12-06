@@ -303,9 +303,9 @@ footer {
   justify-content: space-evenly;
 }
 
-.info {
+/* .info {
   display: none;
-}
+} */
 
 /* Hello with name and picture */
 
@@ -377,6 +377,14 @@ p .page-header {
   border-radius: 10px;
   /* opacity: 3%; */
 }
+
+
+.buttonToTop img{
+  width: 3vw;
+}
+
+
+
 
 /* Media queries */
 

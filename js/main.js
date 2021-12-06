@@ -1,5 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function (e) {
+    e.preventDefault();
+    document.documentElement.scrollTop = 0;
     console.log("DOM loaded")
+    window.scrollTo(0,0)
 });
 
 // document.querySelector(".name").addEventListener("mouseover", nameMeaning);
@@ -69,17 +72,51 @@ async function dropdownMenuClose(e){
     document.querySelector(".dropdown-content").style.display = "none"
 }
 
-async function displayInformation(each) {
-    // console.log("Display info is on")
-    let info = each.parentElement.nextElementSibling
-    info.style.display = "block"
+const links = document.querySelectorAll(".main-row")
+links.forEach(each => each.addEventListener("click", () => {
+    // console.log(each.children[1].classList.value)
+    const nameOfSection = each.children[1].classList.value
+    const section = document.querySelector("#" + nameOfSection)
+    console.log(nameOfSection, section)
+    section.style.height = "100vh";
+    section.scrollIntoView(true);
+
+    // if (each.children[1].classList.contains("projects-link")) {
+    //     scrollToProjects()
+    // } else if (each.children[1].classList.contains("about-link")) {
+
+    // } else if (each.children[1].classList.contains("contacts-link")) {
+
+    // }
+}))
+
+async function scrollToProjects() {
+    const projects = document.querySelector(".projects")
+    projects.style.height = "100vh";
+    projects.scrollIntoView(true);
 }
 
-async function hideInformation(each) {
-    // console.log("Display info is on")
-    let info = each.parentElement.nextElementSibling
-    info.style.display = "none"
-}
+
+
+
+
+
+
+
+
+// async function displayInformation(each) {
+//     // console.log("Display info is on")
+//     let info = each.parentElement.nextElementSibling
+//     info.style.display = "block"
+// }
+
+// async function hideInformation(each) {
+//     // console.log("Display info is on")
+//     let info = each.parentElement.nextElementSibling
+//     info.style.display = "none"
+// }
+
+
 
 // window.addEventListener('scroll',(event) => {
 //     console.log('Scrolling...');
