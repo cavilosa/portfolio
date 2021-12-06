@@ -43,14 +43,14 @@ hexagons.forEach(each => each.addEventListener('mouseover', ()=> {
     each.style.backgroundPosition = "center";
     each.style.backgroundSize = "contain";
 
-    displayInformation(each);
+    // displayInformation(each);
 }))
 
 hexagons.forEach(each => each.addEventListener("mouseleave", () => {
     each.style.backgroundImage = 'url("images/pink-honeycomb.jpg")';
     each.style.backgroundSize = "cover";
 
-    hideInformation(each)
+    // hideInformation(each)
 }))
 
 // Making visible dropdown menu
@@ -59,11 +59,7 @@ document.querySelector(".dropdown-button").addEventListener("click", dropdownMen
 async function dropdownMenu(e){
     e.preventDefault();
     let content = document.querySelector(".dropdown-content")
-    if (content.style.display === "block") {
-        content.style.display = "none"
-    } else {
-        content.style.display = "block"
-    }
+    content.style.display = "block"
 }
 
 document.querySelector(".dropdown-content").addEventListener("mouseleave", dropdownMenuClose);
@@ -103,3 +99,4 @@ async function hideInformation(each) {
 // async function scroll() {
 //     document.querySelector(".main").scrollIntoView({block: "center", behavior: "smooth"});
 // }
+
