@@ -78,7 +78,7 @@ links.forEach(each => each.addEventListener("click", () => {
     const section = document.querySelector("#" + nameOfSection)
     section.style.height = "100vh";
     section.scrollIntoView(true);
-    console.log(section)
+    // console.log(section)
 }))
 
 
@@ -89,8 +89,8 @@ menuLinks.forEach(each => each.addEventListener("click", () => {
     const section = document.querySelector("#" + name)
     // console.log(section)
     section.style.height = "100vh";
-    section.scrollIntoView(true);
-    console.log(section)
+    // section.scrollIntoView(true);
+    // // console.log(section)
 }))
 
 
