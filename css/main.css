@@ -1,6 +1,12 @@
+body {
+  background-image: url("../images/backgound-image.jpg");
+  background-position: center;
+}
+
 .container {
    height: 100vh;
 }
+
 
 /* MENU */
 #menu {
@@ -24,7 +30,7 @@
 }
 
 .dropdown-button {
-  background-color:rgb(240, 135, 193);
+  background-color:		rgb(231, 206, 210);
   border-radius: 5px;
   border: none;
   padding: 5%;
@@ -40,7 +46,7 @@
 }
 
 .text span {
-  margin: 0 1px;
+    margin: 0 1px;
     display: inline-block;
     animation: scrollBob 8s ease-in-out infinite;
     animation-duration: 8s;
@@ -112,10 +118,18 @@
   flex-flow: column;
   max-width: 80%;
   margin: auto;
+  /* background-color: white; */
+  padding: 3%;
+  border-radius: 10%;
+}
+
+.about-main *{
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .dropdown-menu:hover .dropdown-button{
-  background-color: rgb(245, 132, 226);
+  background-color: rgb(240, 183, 230);
 }
 
 .scroll-down {
@@ -187,9 +201,12 @@
   grid-area: hex;
 }
 
+
 footer {
-  height: 10%;
-  background-image: url("../images/backgound-image.jpg");
+  height: 10vh;
+  width: 100vw;
+  /* background-image: url("../images/backgound-image.jpg");
+  background-position: center; */
 }
 
 .clear:after {
@@ -303,21 +320,20 @@ footer {
   justify-content: space-evenly;
 }
 
-/* .info {
-  display: none;
-} */
-
 /* Hello with name and picture */
 
 .page-header {
+  grid-area: text;
   position: relative;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: italic;
   font-size: medium;
+  font-weight: 400;
   text-align: center;
   grid-area: text;
-  /* padding: 2vw; */
-  /* margin: 2vw; */
+  background-color:		rgb(231, 206, 210);
+  border-radius: 2vw;
+  margin: auto;
 }
 
 .name-meaning {
@@ -334,18 +350,6 @@ footer {
   font-weight: 600;
 }
 
-/* .about {
-  margin: 2vw;
-  margin-top: 2vh;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-     "info picture"
-     "p picture";
-  gap: 5px;
-} */
-
 .name {
   font-style: italic;
   text-decoration: underline;
@@ -357,12 +361,20 @@ h1 {
   margin: auto;
   font-size: medium;
   text-align: center;
-  padding: 5%;
+  /* padding: 1% 2% 2% 2%; */
+  border-radius: 5%;
+  background-color:rgb(231, 206, 210);
 }
 
-p .page-header {
+/* p .page-header {
   grid-area: text;
-  padding: 0%;
+  /* padding: 0%; */
+} */
+
+.text:hover {
+    background-color:rgb(235, 189, 214);
+    padding: 10px;
+    border-radius: 15%;
 }
 
 .picture {
@@ -382,6 +394,8 @@ p .page-header {
 .buttonToTop img{
   width: 3vw;
 }
+
+
 
 
 
@@ -440,6 +454,7 @@ p .page-header {
  }
 
  .about-main {
+    max-width: 70%;
     margin: auto;
     margin-top: 2vh;
     display: grid;
@@ -448,7 +463,7 @@ p .page-header {
     grid-template-areas:
       "h1 text"
       "hex hex";
-    gap: 5px;
+    gap: 3%;
     align-items: center;
 }
 
@@ -476,12 +491,13 @@ p .page-header {
     grid-template-areas:
       "h1 text"
       "hex hex";
-    gap: 5px;
+    gap: 5%;
     align-items: center;
 }
 
   .page-header {
     font-size: larger;
+    font-weight: 500;
  }
 
  .scroll-down img {

@@ -41,7 +41,7 @@ let hexagons = document.querySelectorAll(".hexagon");
 //     hideInformation(each)
 // }))
 hexagons.forEach(each => each.addEventListener('mouseover', ()=> {
-    each.style.backgroundImage = 'url("images/flower.jpg")';
+    each.style.backgroundImage = 'url("images/flower-3.jpg")';
     each.style.backgroundRepeat = "no-repeat";
     each.style.backgroundPosition = "center";
     each.style.backgroundSize = "contain";
@@ -89,8 +89,9 @@ menuLinks.forEach(each => each.addEventListener("click", () => {
     const section = document.querySelector("#" + name)
     // console.log(section)
     section.style.height = "100vh";
-    // section.scrollIntoView(true);
-    // // console.log(section)
+    section.scrollIntoView(true);
+    document.querySelector(".dropdown-content").style.display = "none"
+    // console.log(section)
 }))
 
 
