@@ -95,9 +95,23 @@ menuLinks.forEach(each => each.addEventListener("click", () => {
 }))
 
 
+const buttonToTop = document.querySelector(".button-to-top");
 
+window.onscroll = () => { scrollFunction() };
 
+async function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        buttonToTop.style.display = "block";
+      } else {
+        buttonToTop.style.display = "none";
+      }
+}
 
+async function moveToTop() {
+    console.log("move to top")
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 
 // async function displayInformation(each) {
