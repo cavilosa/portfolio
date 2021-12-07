@@ -65,7 +65,7 @@ body {
   0%, 10% {
     transform: none;
     opacity: 1;
-    color: #919795;
+    color: #101111;
   }
   1%, 8% {
     transform: translateY(-2px);
@@ -75,7 +75,7 @@ body {
   4% {
     transform: translateY(3px);
     opacity: 1;
-    color: #919795;
+    color: #101111;
   }
 }
 
@@ -348,11 +348,6 @@ h1 {
   background-color:rgb(231, 206, 210);
 }
 
-/* p .page-header {
-  grid-area: text;
-  /* padding: 0%; */
-} */
-
 .text:hover {
     background-color:rgb(235, 189, 214);
     padding: 10px;
@@ -388,9 +383,6 @@ h1 {
   background-size: cover;
   height: 50px;
   width: 50px
-  /* margin: 4px 2px; */
-  /* width: 10%; */
-  /* height: 10%; */
 }
 
 
@@ -423,20 +415,11 @@ h1 {
    margin: 5vh auto;
    max-width: 80vw;
   }
-
-  .scroll-down img {
-    max-height: 15vh;
-  }
 }
 
 @media only screen and (min-width:769px)  and (max-width:1200px) {
   .dropdown-button {
       font-size: 22px;
-  }
-
-  .about-main {
-    max-width: 70%;
-    margin: 8vh auto;
   }
 
   .page-header {
@@ -459,11 +442,8 @@ h1 {
       "hex hex";
     gap: 3%;
     align-items: center;
-}
+   }
 
-  .scroll-down img {
-    max-height: 20vh;
-  }
 
 }
 
@@ -485,8 +465,8 @@ h1 {
     grid-template-areas:
       "h1 text"
       "hex hex";
-    gap: 5%;
     align-items: center;
+    padding:0%;
 }
 
   .page-header {
@@ -494,7 +474,7 @@ h1 {
     font-weight: 500;
  }
 
- .scroll-down img {
-  max-height: 30vh;
-}
+ .hex-pic {
+   margin: 0%;
+ }
 }
