@@ -113,6 +113,7 @@ body {
   margin: auto;
   padding: 3%;
   border-radius: 10%;
+  /* background-color: rgb(198, 226, 231); */
 }
 
 .about-main *{
@@ -181,6 +182,8 @@ body {
   left:0%;
   width: 60%;
   grid-area: hex;
+  /* background-color: rgb(198, 226, 231); */
+  /* background-color: rgb(232, 227, 227); */
 }
 
 
@@ -229,6 +232,7 @@ footer {
 }
 
 #grid li .hexagon {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -300,6 +304,11 @@ footer {
   flex-flow: row;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.flower {
+  display: none;
+  background-image: url("../images/flower.jpeg");
 }
 
 /* Hello with name and picture */
@@ -454,6 +463,8 @@ h1 {
 
   h1 {
     font-size:xx-large;
+    padding: 1%;
+    border-radius: 10%;
   }
 
   .about-main {
@@ -472,6 +483,7 @@ h1 {
   .page-header {
     font-size: larger;
     font-weight: 500;
+    padding: 1%;
  }
 
  .hex-pic {

@@ -41,16 +41,24 @@ let hexagons = document.querySelectorAll(".hexagon");
 //     hideInformation(each)
 // }))
 hexagons.forEach(each => each.addEventListener('mouseover', ()=> {
-    each.style.backgroundImage = 'url("images/flower-3.jpg")';
-    each.style.backgroundRepeat = "no-repeat";
+    each.style.backgroundImage = 'url("images/purple-flower.png")';
+    // each.style.background = "#0e0e0e";
+    // each.style.height = "90%";
+    // each.style.width = "80%";
+    // each.style.margin = "0px";
+    // each.style.backgroundImage =  "url('https://sebhastian.com/img/default.png')";
+    // each.style.backgroundRepeat = "no-repeat";
     each.style.backgroundPosition = "center";
     each.style.backgroundSize = "contain";
+
 
     // displayInformation(each);
 }))
 
 hexagons.forEach(each => each.addEventListener("mouseleave", () => {
     each.style.backgroundImage = 'url("images/pink-honeycomb.jpg")';
+    each.style.height = "100%";
+    each.style.width = "100%";
     each.style.backgroundSize = "cover";
 
     // hideInformation(each)
