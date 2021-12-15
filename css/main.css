@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/backgound-image.jpg");
+  background-image: url("../images/trans-background.png");
   background-position: center;
 }
 
@@ -392,6 +392,12 @@ h1 {
   background-size: cover;
   height: 50px;
   width: 50px
+}
+
+#projects,
+#about,
+#contacts {
+  display: none;
 }
 
 

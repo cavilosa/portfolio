@@ -85,6 +85,7 @@ links.forEach(each => each.addEventListener("click", () => {
     const nameOfSection = each.children[1].classList.value
     const section = document.querySelector("#" + nameOfSection)
     section.style.height = "100vh";
+    section.style.display = "block";
     section.scrollIntoView(true);
     // console.log(section)
 }))
@@ -116,9 +117,12 @@ async function scrollFunction() {
 }
 
 async function moveToTop() {
-    console.log("move to top")
+    // console.log("scroll to top")
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    const links = document.querySelectorAll(".links")
+    links.forEach( each => each.style.display = "none")
+
 }
 
 
