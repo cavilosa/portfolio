@@ -96,6 +96,7 @@ menuLinks.forEach(each => each.addEventListener("click", () => {
     // console.log(each)
     const name = each.innerHTML.toLowerCase()
     const section = document.querySelector("#" + name)
+    section.style.display = "block"
     // console.log(section)
     section.style.height = "100vh";
     section.scrollIntoView(true);
