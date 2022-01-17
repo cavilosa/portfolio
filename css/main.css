@@ -45,6 +45,11 @@ body {
   z-index: 200;
 }
 
+/* .dropdown-button:focus-within .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+} */
+
 .text span {
     margin: 0 1px;
     display: inline-block;
@@ -400,6 +405,46 @@ h1 {
   display: none;
 }
 
+/* Projects */
+
+.project {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+}
+
+.name-and-logo {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.project-logo img{
+  width: 40px;
+}
+
+.project-description {
+    font-size: large;
+    background-color: aliceblue;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tools {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tools * {
+  width: 40px;
+  margin: 10px;
+}
 
 /* Media queries */
 
