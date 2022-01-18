@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
-  /* margin-top: 4vw; */
+  /* margin-bottom: 0.5 vh; */
   height: 5vh;
   align-items: center;
   position: -webkit-sticky; /* Safari */
@@ -122,8 +122,8 @@ body {
 }
 
 .about-main *{
-  margin-top: 2%;
-  margin-bottom: 2%;
+  /* margin-top: 2%; */
+  margin-bottom: 2vh;
 }
 
 .dropdown-menu:hover .dropdown-button{
@@ -163,6 +163,7 @@ body {
   flex-flow: row;
   margin-right: 3vw;
   grid-area: hex;
+  margin-top: 2vh;
 }
 
 /* @keyframes arrow {
@@ -407,12 +408,24 @@ h1 {
 
 /* Projects */
 
+h3 {
+  font-style: italic;
+  font-size: x-large;
+  font-weight: 900;
+  background-color:aliceblue;
+}
+
 .project {
     text-align: center;
     display: flex;
     flex-flow: column;
+    border: solid  aliceblue 5px;
+    border-bottom: solid aliceblue 20px;
+    margin-bottom: 20px;
+    padding: 10px;
     margin: 10px;
 }
+
 
 .name-and-logo {
   display: flex;
@@ -429,8 +442,8 @@ h1 {
     background-color: aliceblue;
     padding: 5px;
     text-align: center;
-    align-items: center;
-    justify-content: space-evenly;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
 }
 
 .tools {
@@ -462,7 +475,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width:400px)  and (max-width:768px) {
+@media only screen and (min-width:400px)  and (max-width:767px) {
    p {
        font-size: small;
    }
@@ -477,7 +490,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width:769px)  and (max-width:1200px) {
+@media only screen and (min-width:768px)  and (max-width:1200px) {
   .dropdown-button {
       font-size: 22px;
   }
@@ -504,6 +517,16 @@ h1 {
     align-items: center;
    }
 
+   .projects-container {
+     display: flex;
+     flex-flow: row;
+     /* align-items: stretch; */
+     justify-content: space-evenly;
+   }
+
+   .project {
+       /* height: 20vh; */
+   }
 
 }
 
@@ -540,4 +563,27 @@ h1 {
  .hex-pic {
    margin: 0%;
  }
+
+  .projects-container {
+     display: flex;
+     flex-flow: row;
+     justify-content: space-evenly;
+     width: 80vw;
+     margin: auto;
+   }
+
+   h3 {
+     font-size: xx-large;
+   }
+
+   .project-description,
+   .page-header,
+   span {
+     font-size: x-large;
+   }
+
+ /* .project {
+  flex-flow: row;
+  justify-content: space-evenly;
+  } */
 }
