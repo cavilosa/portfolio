@@ -576,6 +576,8 @@ h3 {
   grid-template-areas:
   "ph tp"
   "tr fy";
+  width: 80vw;
+  margin: auto;
 }
 
    h3 {
