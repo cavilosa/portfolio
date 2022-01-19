@@ -64,7 +64,7 @@ const links = document.querySelectorAll(".main-row")
 links.forEach(each => each.addEventListener("click", () => {
     const nameOfSection = each.children[1].classList.value
     const section = document.querySelector("#" + nameOfSection)
-    section.style.height = "100vh";
+    // section.style.height = "100vh";
     section.style.display = "block";
     section.scrollIntoView(true);
     // console.log(section)
