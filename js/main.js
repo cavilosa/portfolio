@@ -25,29 +25,9 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
 let hexagons = document.querySelectorAll(".hexagon");
 
-// hexagons.forEach(each => each.addEventListener('mouseover', ()=> {
-//     each.style.backgroundImage = 'url("images/flower.jpg")';
-//     // each.style.backgroundRepeat = "no-repeat";
-//     each.style.backgroundPosition = "center";
-//     each.style.backgroundSize = "contain";
 
-//     displayInformation(each);
-// }))
-
-// hexagons.forEach(each => each.addEventListener("mouseleave", () => {
-//     each.style.backgroundImage = 'url("images/pink-honeycomb.jpg")';
-//     each.style.backgroundSize = "cover";
-
-//     hideInformation(each)
-// }))
 hexagons.forEach(each => each.addEventListener('mouseover', ()=> {
     each.style.backgroundImage = 'url("images/purple-flower.png")';
-    // each.style.background = "#0e0e0e";
-    // each.style.height = "90%";
-    // each.style.width = "80%";
-    // each.style.margin = "0px";
-    // each.style.backgroundImage =  "url('https://sebhastian.com/img/default.png')";
-    // each.style.backgroundRepeat = "no-repeat";
     each.style.backgroundPosition = "center";
     each.style.backgroundSize = "contain";
 
@@ -123,39 +103,15 @@ async function moveToTop() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     const links = document.querySelectorAll(".links")
     links.forEach( each => each.style.display = "none")
-
 }
 
-
-// async function displayInformation(each) {
-//     // console.log("Display info is on")
-//     let info = each.parentElement.nextElementSibling
-//     info.style.display = "block"
-// }
-
-// async function hideInformation(each) {
-//     // console.log("Display info is on")
-//     let info = each.parentElement.nextElementSibling
-//     info.style.display = "none"
-// }
-
-
-
-// window.addEventListener('scroll',(event) => {
-//     console.log('Scrolling...');
-// });
-
-// document.querySelector(".scroll-down").addEventListener("click", scrollDown)
-
-// async function scrollDown(e) {
-//     console.log("Scroll")
-//     e.preventDefault;
-//     let element = document.querySelector(".main")
-//     document.querySelector(".main").style.display = "block"
-//     element.style.top = "10px"
-
-// }
-
-// async function scroll() {
-//     document.querySelector(".main").scrollIntoView({block: "center", behavior: "smooth"});
-// }
+if (window.performance) {
+    // console.info("window.performance works fine on this browser");
+  }
+  if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+    // console.info( "This page is reloaded" );
+    const links = document.querySelectorAll(".links")
+    links.forEach( each => each.style.display = "none")
+  } else {
+    // console.info( "This page is not reloaded");
+  }

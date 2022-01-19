@@ -470,13 +470,13 @@ h3 {
     grid-template-rows: auto;
 }
 
-#projects {
+/* #projects {
   display: table;
 }
 
 .projects-container {
   display: table-row;
-}
+} */
 
 /* Media queries */
 
