@@ -5,7 +5,7 @@ body {
 
 .container {
    height: 100vh;
-   font-family:  'Courgette', cursive;
+   /* font-family:  'Courgette', cursive; */
 }
 
 /* MENU */
@@ -414,10 +414,14 @@ h1 {
 
 .about-description,
 .contacts-container {
-    /* margin: 20px 40px 20px 40px; */
     padding: 20px;
-    font-family:  'Pacifico', cursive;
-    font-size: clamp(1vh, 3vh , 4vh);
+    /* font-family: 'Great Vibes'; */
+    font-size: clamp(2vh, 3vh, 4vh);
+    font-family:  'Courgette', cursive;
+    max-width: 80%;
+    /* align-self: center; */
+    /* justify-content: center; */
+    margin: auto;
 }
 
 h2 {
@@ -460,7 +464,7 @@ h3 {
     text-align: center;
     display: flex;
     flex-flow: column;
-    border: solid  aliceblue 5px;
+    border: solid aliceblue 5px;
     border-bottom: solid aliceblue 40px;
     padding: 10px;
     margin: 10px 10px 5vh 10px;
