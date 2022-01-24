@@ -408,7 +408,7 @@ h1 {
 
 .links {
   border-bottom: dotted 5px rgb(201, 69, 141);
-  text-align: center;
+  text-align:justify;
   align-self: center;
 }
 
@@ -417,7 +417,11 @@ h1 {
     /* margin: 20px 40px 20px 40px; */
     padding: 20px;
     font-family:  'Pacifico', cursive;
-    /* font-size: clamp(2vw, 3vw , 4vw); */
+    font-size: clamp(1vh, 3vh , 4vh);
+}
+
+h2 {
+  text-align: center;
 }
 
 .contacts-container {
@@ -427,17 +431,22 @@ h1 {
 }
 
 .contacts-button {
+  width: 20vw;
+  height: 20vw;
   border-radius: 20px;
+  border: none;
   margin: 10px;
-  /* padding: 20px; */
   font-family:  'Pacifico', cursive;
-  font-size: medium;
+  /* width: 20vw;
+  height: 20vw; */
+  padding: 0px;
 }
 
-/* .about-description {
-font-family:  'Pacifico', cursive;
-font-size: x-large;
-} */
+.contacts-button img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+}
 
 /* Projects */
 
@@ -493,8 +502,8 @@ h3 {
 .to-projects {
   text-decoration-line: underline;
   color:rgb(201, 69, 141);
-  display: block;
-  font-size: clamp(2vh, 3vh, 4vh);
+  display: inline-block;
+  font-size: clamp(1vh, 3vh, 4vh);
   animation: projects 4s linear 0s infinite alternate;
 }
 
@@ -505,6 +514,7 @@ h3 {
 
   50% {
     transform: rotate(10deg);
+    /* transform: translate(20%); */
   }
 
   100% {
