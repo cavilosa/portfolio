@@ -61,6 +61,11 @@ async function dropdownMenuClose(e){
 }
 
 const links = document.querySelectorAll(".main-row")
+const toProjects = document.querySelector(".to-projects")
+toProjects.addEventListener("click", (e) => {
+    document.querySelector("#projects").style.display = "block";
+    document.querySelector("#projects").scrollIntoView(true)
+})
 links.forEach(each => each.addEventListener("click", () => {
     const nameOfSection = each.children[1].classList.value
     const section = document.querySelector("#" + nameOfSection)

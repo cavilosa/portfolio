@@ -406,6 +406,39 @@ h1 {
   display: none;
 }
 
+.links {
+  border-bottom: dotted 5px rgb(201, 69, 141);
+  text-align: center;
+  align-self: center;
+}
+
+.about-description,
+.contacts-container {
+    /* margin: 20px 40px 20px 40px; */
+    padding: 20px;
+    font-family:  'Pacifico', cursive;
+    /* font-size: clamp(2vw, 3vw , 4vw); */
+}
+
+.contacts-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.contacts-button {
+  border-radius: 20px;
+  margin: 10px;
+  /* padding: 20px; */
+  font-family:  'Pacifico', cursive;
+  font-size: medium;
+}
+
+/* .about-description {
+font-family:  'Pacifico', cursive;
+font-size: x-large;
+} */
+
 /* Projects */
 
 h3 {
@@ -420,10 +453,9 @@ h3 {
     display: flex;
     flex-flow: column;
     border: solid  aliceblue 5px;
-    border-bottom: solid aliceblue 20px;
-    margin-bottom: 20px;
+    border-bottom: solid aliceblue 40px;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 10px 5vh 10px;
 }
 
 .name-and-logo {
@@ -458,17 +490,26 @@ h3 {
   margin: 10px;
 }
 
-.contacts-container {
-    display: flex;
-    flex-flow: row;
+.to-projects {
+  text-decoration-line: underline;
+  color:rgb(201, 69, 141);
+  display: block;
+  font-size: clamp(2vh, 3vh, 4vh);
+  animation: projects 4s linear 0s infinite alternate;
 }
 
-.contacts-button {
-    border-radius: 20px;
-    margin: 20px;
-    padding: 20px;
-    font-family:  'Pacifico', cursive;
-    font-size: x-large;
+@keyframes projects {
+  0% {
+    color:rgb(100, 74, 96);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
 }
 
 /* Media queries */
