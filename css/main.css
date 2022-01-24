@@ -415,13 +415,11 @@ h1 {
 .about-description,
 .contacts-container {
     padding: 20px;
-    /* font-family: 'Great Vibes'; */
     font-size: clamp(2vh, 3vh, 4vh);
-    font-family:  'Courgette', cursive;
+    font-family: 'Luxurious Roman', cursive;
     max-width: 80%;
-    /* align-self: center; */
-    /* justify-content: center; */
     margin: auto;
+    line-height: 1.8;
 }
 
 h2 {
@@ -448,7 +446,6 @@ h2 {
 .contacts-button img {
   max-width: 10vw;
   max-height: 10vw;
-  border-radius: 20px;
 }
 
 /* Projects */
@@ -504,7 +501,7 @@ h3 {
 
 .to-projects {
   text-decoration-line: underline;
-  color:rgb(201, 69, 141);
+  color:rgb(126, 26, 146);
   display: inline-block;
   font-size: clamp(1vh, 3vh, 4vh);
   animation: projects 4s linear 0s infinite alternate;
@@ -512,7 +509,7 @@ h3 {
 
 @keyframes projects {
   0% {
-    color:rgb(100, 74, 96);
+    color:rgb(126, 36, 112);
   }
 
   50% {
