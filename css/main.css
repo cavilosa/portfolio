@@ -1,3 +1,8 @@
+:root {
+    --background-color:rgb(241, 226, 239, 0.5);;
+    --hover-color:rgb(192, 175, 189);;
+}
+
 body {
   background-image: url("../images/trans-background-2.png");
   background-position: center;
@@ -30,7 +35,7 @@ body {
 }
 
 .dropdown-button {
-  background-color:		rgb(231, 206, 210);
+  background-color: var(--background-color);
   border-radius: 5px;
   border: none;
   padding: 5%;
@@ -38,7 +43,7 @@ body {
 
 .dropdown-content {
   display: none;
-  background-color:  rgb(255, 192, 229);
+  background-color: var(--background-color);
   position: absolute;
   margin: 6px;
   border-radius: 5px;
@@ -108,7 +113,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(240, 135, 193);
+    background-color: var(--hover-color);
 }
 
 .about-main{
@@ -127,7 +132,7 @@ body {
 }
 
 .dropdown-menu:hover .dropdown-button{
-  background-color: rgb(240, 183, 230);
+  background-color: var(--hover-color);
 }
 
 /* .scroll-down {
@@ -328,14 +333,14 @@ footer {
   font-weight: 400;
   text-align: center;
   grid-area: text;
-  background-color:		rgb(231, 206, 210);
+  background-color: var(--background-color);
   border-radius: 2vw;
   margin: auto;
 }
 
 .name-meaning {
   display: none;
-  background-color:rgb(243, 162, 243);
+  background-color:var(--background-color);
   border-radius: 10px;
   text-align: center;
   font-size: small;
@@ -360,12 +365,11 @@ h1 {
   text-align: center;
   /* padding: 1% 2% 2% 2%; */
   border-radius: 5%;
-  background-color:rgb(231, 206, 210);
+  background-color: var(--background-color, 0.5);
 }
 
 .text:hover {
-    background-color:rgb(235, 189, 214);
-    padding: 10px;
+    background-color: var(--hover-color);
     border-radius: 15%;
 }
 
@@ -520,6 +524,19 @@ h3 {
   100% {
     transform: rotate(-10deg);
   }
+}
+
+.contacts-description {
+  display: flex;
+  flex-flow: column;
+  width: 80vw;
+  margin:auto;
+  text-align: center;
+}
+
+.h4-contacts {
+   text-align: center;
+   text-decoration:underline;
 }
 
 /* Media queries */
